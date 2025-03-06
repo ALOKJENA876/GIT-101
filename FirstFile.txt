@@ -1,0 +1,13 @@
+git config --list --show-origin
+
+git config --global user.name "Alok Jena"
+git config --global user.email alokjena887766@gmail.com
+ git --version
+
+ git reset
+ git status
+ git commit -m "Initial commit"
+ git log
+ git add .
+ git checkout master
+ git branch 
