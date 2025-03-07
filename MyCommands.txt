@@ -21,6 +21,10 @@ git remote -v
 git remote add origin https://github.com/ALOKJENA876/GIT-101.git
 git push -u origin master 
 
+Git clone <Repo URL>
+
+
+
 …or create a new repository on the command line
 echo "# GIT-101" >> README.md
 git init
@@ -33,3 +37,4 @@ git push -u origin main
 git remote add origin https://github.com/ALOKJENA876/GIT-101.git
 git branch -M main
 git push -u origin main
+git push -u origin dev
