@@ -1,0 +1,35 @@
+git config --list --show-origin
+
+git config --global user.name "Alok Jena"
+git config --global user.email alokjena887766@gmail.com
+ git --version
+
+ git reset
+ git status
+ git commit -m "Initial commit"
+ git log
+ git add .
+ git checkout master
+ git checkout -b <branch name>
+ git branch dev
+ git branch 
+git merge branchname
+git merge alok/multiply
+
+git remote -v 
+
+git remote add origin https://github.com/ALOKJENA876/GIT-101.git
+git push -u origin master 
+
+…or create a new repository on the command line
+echo "# GIT-101" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ALOKJENA876/GIT-101.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ALOKJENA876/GIT-101.git
+git branch -M main
+git push -u origin main
