@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                bat 'python -m py_compile add2vals.py calc.py' 
+                bat 'C:\Users\jenaa\AppData\Local\Microsoft\WindowsApps\python.exe -m py_compile add2vals.py calc.py' 
                 stash(name: 'compiled-results', includes: '*.py*') 
             }
         }
