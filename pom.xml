@@ -1,0 +1,24 @@
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>3.0.0</version>
+      <executions>
+        <execution>
+          <id>run-python-script</id>
+          <phase>validate</phase> <!-- Or another suitable phase -->
+          <goals>
+            <goal>exec</goal>
+          </goals>
+          <configuration>
+            <executable>python</executable> <!-- Assuming 'python' is in your PATH -->
+            <arguments>
+              <argument>hello.py</argument> <!-- Replace with the actual path to your script -->
+            </arguments>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
