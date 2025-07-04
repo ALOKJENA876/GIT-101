@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'python -m py_compile add2vals.py calc.py' 
+                bat 'echo %path%'
+                bat 'python -m py_compile add2vals.py calc.py' 
                 stash(name: 'compiled-results', includes: '*.py*') 
             }
         }
