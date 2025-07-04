@@ -5,6 +5,7 @@ pipeline {
             steps {
                 bat 'echo %path%'
                 bat 'python -m py_compile add2vals.py calc.py' 
+                bat 'python add2vals.py'
                 stash(name: 'compiled-results', includes: '*.py*') 
             }
         }
