@@ -1,3 +1,5 @@
+git clone https://github.com/ALOKJENA876/GIT-101.git
+
 git config --list --show-origin
 
 git config --global user.name "Alok Jena"
