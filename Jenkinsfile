@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'py.test --junit-xml test-reports/results.xml test_calc.py'
+                bat 'python -m pytest --junit-xml test-reports/results.xml test_calc.py'
             }
             post {
                 always {
@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat "pyinstaller --onefile sources/add2vals.py"
+                bat "python -m PyInstaller --onefile sources/add2vals.py"
             }
             post {
                 success {
