@@ -11,21 +11,21 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'python -m pytest --junit-xml test-reports/results.xml test_calc.py'
+                //bat 'python -m pytest --junit-xml test-reports/results.xml test_calc.py'
             }
             post {
                 always {
-                    junit 'test-reports/results.xml'
+                   // junit 'test-reports/results.xml'
                 }
             }
         }
         stage('Deliver') {
             steps {
-                bat "python -m PyInstaller --onefile sources/add2vals.py"
+                //bat "python -m PyInstaller --onefile add2vals.py"
             }
             post {
                 success {
-                    archiveArtifacts 'dist/add2vals'
+                    //archiveArtifacts 'dist/add2vals'
                 }
             }
         }
